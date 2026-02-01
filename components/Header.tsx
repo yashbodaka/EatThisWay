@@ -126,8 +126,15 @@ export default function Header() {
         </div>
 
         {/* Mobile Menu Overlay */}
-        {isMenuOpen && (
-          <div className="fixed inset-0 top-[64px] z-40 bg-[#FAFCF5] p-6 space-y-6 md:hidden overflow-y-auto border-t border-[#296374]/10 shadow-xl">
+        <div
+          className={`md:hidden fixed inset-x-0 top-16 z-40 bg-gradient-to-br from-white to-[#FAFCF5] border-t border-[#296374]/10 shadow-2xl transition-all duration-300 ease-in-out ${
+            isMenuOpen
+              ? 'max-h-screen opacity-100 translate-y-0'
+              : 'max-h-0 opacity-0 -translate-y-4 pointer-events-none'
+          }`}
+        >
+          <div className="p-6 space-y-6 overflow-y-auto max-h-[calc(100vh-4rem)]">
+            {/* Search Bar */}
             <form onSubmit={handleSearch} className="w-full">
               <div className="relative">
                 <input
@@ -135,29 +142,33 @@ export default function Header() {
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   placeholder="Search recipes..."
-                  className="w-full px-5 py-3 pl-11 bg-white border border-[#296374]/20 rounded-xl text-[#233D4D] placeholder-[#233D4D]/50 focus:outline-none focus:border-[#296374] focus:ring-1 focus:ring-[#296374] transition-all"
+                  className="w-full px-5 py-4 pl-12 bg-white border-2 border-[#296374]/20 rounded-2xl text-[#233D4D] placeholder-[#233D4D]/50 focus:outline-none focus:border-[#296374] focus:ring-2 focus:ring-[#296374]/20 transition-all shadow-sm"
                 />
                 <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-[#296374]/60" />
               </div>
             </form>
-            <nav className="flex flex-col space-y-4">
+
+            {/* Navigation Links */}
+            <nav className="flex flex-col space-y-3">
               <Link
                 href="/"
-                className="text-lg font-bold text-[#0C2C55] py-3 border-b border-[#296374]/10 hover:text-[#296374] transition-colors"
+                className="group flex items-center justify-between px-5 py-4 text-lg font-bold text-[#0C2C55] bg-white rounded-2xl border-2 border-[#296374]/10 hover:border-[#296374] hover:bg-[#296374]/5 transition-all shadow-sm"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Home
+                <span>Home</span>
+                <span className="text-[#296374] group-hover:translate-x-1 transition-transform">→</span>
               </Link>
               <Link
                 href="/recipes"
-                className="text-lg font-bold text-[#0C2C55] py-3 border-b border-[#296374]/10 hover:text-[#296374] transition-colors"
+                className="group flex items-center justify-between px-5 py-4 text-lg font-bold text-[#0C2C55] bg-white rounded-2xl border-2 border-[#296374]/10 hover:border-[#296374] hover:bg-[#296374]/5 transition-all shadow-sm"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Recipes
+                <span>Recipes</span>
+                <span className="text-[#296374] group-hover:translate-x-1 transition-transform">→</span>
               </Link>
             </nav>
           </div>
-        )}
+        </div>
       </div>
     </header>
   );
