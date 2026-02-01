@@ -1,0 +1,164 @@
+{
+  "id": "chicken-tikka-masala",
+  "title": "Chicken Tikka Masala",
+  "slug": "chicken-tikka-masala",
+  "description": "Tender chicken pieces marinated in yogurt and spices, cooked in a rich, creamy tomato-based curry sauce. This classic Indian dish is perfect for a flavorful dinner.",
+  "category": "Main Course",
+  "cuisine": "Indian",
+  "difficulty": "Medium",
+  "prepTime": 30,
+  "cookTime": 40,
+  "totalTime": 70,
+  "servings": 4,
+  "author": {
+    "name": "Eat This Way",
+    "avatar": "https://images.unsplash.com/photo-1583394293214-28ded15ee548?w=200&h=200&fit=crop"
+  },
+  "images": {
+    "main": "https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?w=1200&h=800&fit=crop",
+    "thumbnail": "https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?w=400&h=300&fit=crop"
+  },
+  "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+  "ingredients": [
+    {
+      "item": "boneless chicken breast",
+      "amount": "500",
+      "unit": "g",
+      "section": "For Marinade"
+    },
+    {
+      "item": "plain yogurt",
+      "amount": "1",
+      "unit": "cup"
+    },
+    {
+      "item": "lemon juice",
+      "amount": "2",
+      "unit": "tbsp"
+    },
+    {
+      "item": "ginger-garlic paste",
+      "amount": "2",
+      "unit": "tbsp"
+    },
+    {
+      "item": "garam masala",
+      "amount": "1",
+      "unit": "tsp"
+    },
+    {
+      "item": "turmeric powder",
+      "amount": "1",
+      "unit": "tsp"
+    },
+    {
+      "item": "vegetable oil",
+      "amount": "2",
+      "unit": "tbsp",
+      "section": "For Sauce"
+    },
+    {
+      "item": "onion, finely chopped",
+      "amount": "1",
+      "unit": "large"
+    },
+    {
+      "item": "tomato puree",
+      "amount": "400",
+      "unit": "g"
+    },
+    {
+      "item": "heavy cream",
+      "amount": "1",
+      "unit": "cup"
+    },
+    {
+      "item": "butter",
+      "amount": "2",
+      "unit": "tbsp"
+    },
+    {
+      "item": "cumin powder",
+      "amount": "1",
+      "unit": "tsp"
+    },
+    {
+      "item": "paprika",
+      "amount": "1",
+      "unit": "tsp"
+    },
+    {
+      "item": "salt",
+      "amount": "1",
+      "unit": "tsp"
+    },
+    {
+      "item": "fresh cilantro",
+      "amount": "2",
+      "unit": "tbsp"
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "text": "In a large bowl, combine yogurt, lemon juice, ginger-garlic paste, garam masala, and turmeric. Add chicken pieces and mix well. Cover and refrigerate for at least 2 hours or overnight."
+    },
+    {
+      "step": 2,
+      "text": "Preheat grill or oven to 220°C (425°F). Thread marinated chicken onto skewers and grill for 15-20 minutes, turning occasionally, until cooked through and slightly charred."
+    },
+    {
+      "step": 3,
+      "text": "Heat oil in a large pan over medium heat. Add chopped onion and sauté until golden brown, about 5 minutes."
+    },
+    {
+      "step": 4,
+      "text": "Add tomato puree, cumin powder, paprika, and salt. Cook for 10 minutes, stirring occasionally until the sauce thickens."
+    },
+    {
+      "step": 5,
+      "text": "Reduce heat to low. Stir in heavy cream and butter. Add the grilled chicken pieces and simmer for 10 minutes."
+    },
+    {
+      "step": 6,
+      "text": "Garnish with fresh cilantro and serve hot with naan bread or basmati rice. Enjoy!"
+    }
+  ],
+  "nutritionFacts": {
+    "calories": 450,
+    "protein": "35g",
+    "carbs": "18g",
+    "fat": "28g"
+  },
+  "tags": ["spicy", "curry", "dinner", "high-protein", "gluten-free"],
+  "dietaryInfo": ["gluten-free"],
+  "publishedAt": "2026-01-15",
+  "updatedAt": "2026-01-20",
+  "featured": true,
+  "rating": 4.8,
+  "reviewCount": 125,
+  "notes": [
+    "For best results, marinate the chicken overnight for maximum flavor penetration.",
+    "You can substitute heavy cream with coconut cream for a dairy-free version that's just as delicious.",
+    "Leftovers can be stored in an airtight container in the refrigerator for up to 3 days.",
+    "The dish actually tastes better the next day as the flavors have more time to meld together."
+  ],
+  "faqs": [
+    {
+      "question": "Can I make this recipe ahead of time?",
+      "answer": "Yes! This dish actually tastes better the next day as the flavors have more time to develop. Prepare it a day ahead and reheat gently before serving."
+    },
+    {
+      "question": "What can I serve with this dish?",
+      "answer": "Chicken Tikka Masala pairs perfectly with basmati rice, naan bread, or roti. Add a side of cucumber raita to cool down the spices."
+    },
+    {
+      "question": "Can I freeze this recipe?",
+      "answer": "Absolutely! This dish freezes well for up to 3 months. Thaw overnight in the refrigerator and reheat on the stovetop, adding a splash of cream if needed."
+    },
+    {
+      "question": "How can I adjust the spice level?",
+      "answer": "To make it milder, reduce the amount of paprika and garam masala. For extra heat, add 1-2 chopped green chilies or a pinch of cayenne pepper."
+    }
+  ]
+}

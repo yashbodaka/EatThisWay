@@ -1,0 +1,129 @@
+{
+  "id": "chocolate-lava-cake",
+  "title": "Chocolate Lava Cake",
+  "slug": "chocolate-lava-cake",
+  "description": "Decadent individual chocolate cakes with a molten chocolate center that flows out when you cut into them. Perfect for impressing dinner guests!",
+  "category": "Dessert",
+  "cuisine": "French",
+  "difficulty": "Medium",
+  "prepTime": 15,
+  "cookTime": 12,
+  "totalTime": 27,
+  "servings": 4,
+  "author": {
+    "name": "Eat This Way",
+    "avatar": "https://images.unsplash.com/photo-1583394293214-28ded15ee548?w=200&h=200&fit=crop"
+  },
+  "images": {
+    "main": "https://images.unsplash.com/photo-1624353365286-3f8d62daad51?w=1200&h=800&fit=crop",
+    "thumbnail": "https://images.unsplash.com/photo-1624353365286-3f8d62daad51?w=400&h=300&fit=crop"
+  },
+  "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+  "ingredients": [
+    {
+      "item": "dark chocolate (70% cocoa)",
+      "amount": "100",
+      "unit": "g",
+      "section": "Main"
+    },
+    {
+      "item": "unsalted butter",
+      "amount": "100",
+      "unit": "g"
+    },
+    {
+      "item": "eggs",
+      "amount": "2",
+      "unit": "large"
+    },
+    {
+      "item": "egg yolks",
+      "amount": "2",
+      "unit": "large"
+    },
+    {
+      "item": "granulated sugar",
+      "amount": "1/4",
+      "unit": "cup"
+    },
+    {
+      "item": "all-purpose flour",
+      "amount": "2",
+      "unit": "tbsp"
+    },
+    {
+      "item": "vanilla extract",
+      "amount": "1/2",
+      "unit": "tsp"
+    },
+    {
+      "item": "butter for greasing",
+      "amount": "1",
+      "unit": "tbsp"
+    },
+    {
+      "item": "cocoa powder for dusting",
+      "amount": "1",
+      "unit": "tbsp"
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "text": "Preheat oven to 220°C (425°F). Butter four 6-ounce ramekins and dust with cocoa powder, tapping out excess."
+    },
+    {
+      "step": 2,
+      "text": "Melt chocolate and butter together in a double boiler or microwave, stirring until smooth. Let cool slightly."
+    },
+    {
+      "step": 3,
+      "text": "In a separate bowl, whisk together eggs, egg yolks, sugar, and vanilla until thick and pale, about 2 minutes."
+    },
+    {
+      "step": 4,
+      "text": "Fold the chocolate mixture into the egg mixture. Gently fold in the flour until just combined."
+    },
+    {
+      "step": 5,
+      "text": "Divide batter evenly among prepared ramekins. Place on a baking sheet."
+    },
+    {
+      "step": 6,
+      "text": "Bake for 12-14 minutes until edges are firm but center is soft. Let stand for 1 minute, then invert onto plates. Serve immediately with vanilla ice cream or whipped cream."
+    }
+  ],
+  "nutritionFacts": {
+    "calories": 385,
+    "protein": "8g",
+    "carbs": "32g",
+    "fat": "26g"
+  },
+  "tags": ["chocolate", "dessert", "romantic", "quick", "indulgent"],
+  "dietaryInfo": ["vegetarian"],
+  "publishedAt": "2026-01-10",
+  "updatedAt": "2026-01-10",
+  "featured": true,
+  "rating": 4.9,
+  "reviewCount": 89,
+  "notes": [
+    "The key to a perfect molten center is not overbaking. The edges should be set but the center should still jiggle slightly.",
+    "Use high-quality chocolate (70% cocoa) for the best flavor and texture.",
+    "These can be prepared ahead and refrigerated for up to 24 hours. Add 1-2 minutes to baking time if baking from cold.",
+    "Dust with powdered sugar just before serving for an elegant presentation."
+  ],
+  "faqs": [
+    {
+      "question": "Can I make these in advance?",
+      "answer": "Yes! You can prepare the batter and fill the ramekins up to 24 hours ahead. Keep refrigerated and add 1-2 minutes to the baking time."
+    },
+    {
+      "question": "What if I don't have ramekins?",
+      "answer": "You can use muffin tins instead, but reduce the baking time to 8-10 minutes and watch carefully for doneness."
+    },
+    {
+      "question": "How do I know when they're done?",
+      "answer": "The edges should be firm and slightly pulling away from the sides, but the center should still look soft and jiggle when gently shaken."
+    }
+  ]
+}

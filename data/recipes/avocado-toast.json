@@ -1,0 +1,135 @@
+{
+  "id": "avocado-toast",
+  "title": "Perfect Avocado Toast",
+  "slug": "avocado-toast",
+  "description": "A simple yet delicious breakfast or brunch option with creamy avocado, perfectly seasoned, on crispy toasted bread. Customizable with your favorite toppings!",
+  "category": "Breakfast",
+  "cuisine": "American",
+  "difficulty": "Easy",
+  "prepTime": 5,
+  "cookTime": 5,
+  "totalTime": 10,
+  "servings": 2,
+  "author": {
+    "name": "Eat This Way",
+    "avatar": "https://images.unsplash.com/photo-1583394293214-28ded15ee548?w=200&h=200&fit=crop"
+  },
+  "images": {
+    "main": "https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?w=1200&h=800&fit=crop",
+    "thumbnail": "https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?w=400&h=300&fit=crop"
+  },
+  "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+  "ingredients": [
+    {
+      "item": "ripe avocados",
+      "amount": "2",
+      "unit": "medium",
+      "section": "Main"
+    },
+    {
+      "item": "whole grain bread",
+      "amount": "4",
+      "unit": "slices"
+    },
+    {
+      "item": "lemon juice",
+      "amount": "1",
+      "unit": "tbsp"
+    },
+    {
+      "item": "extra virgin olive oil",
+      "amount": "2",
+      "unit": "tsp"
+    },
+    {
+      "item": "sea salt",
+      "amount": "1/2",
+      "unit": "tsp"
+    },
+    {
+      "item": "black pepper",
+      "amount": "1/4",
+      "unit": "tsp"
+    },
+    {
+      "item": "red pepper flakes",
+      "amount": "1/4",
+      "unit": "tsp"
+    },
+    {
+      "item": "cherry tomatoes, halved",
+      "amount": "1/2",
+      "unit": "cup",
+      "section": "Optional Toppings"
+    },
+    {
+      "item": "poached egg",
+      "amount": "2",
+      "unit": "eggs"
+    },
+    {
+      "item": "microgreens",
+      "amount": "1/4",
+      "unit": "cup"
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "text": "Toast the bread slices until golden brown and crispy."
+    },
+    {
+      "step": 2,
+      "text": "While bread is toasting, cut avocados in half, remove pit, and scoop flesh into a bowl."
+    },
+    {
+      "step": 3,
+      "text": "Mash avocados with a fork, leaving some chunks for texture. Add lemon juice, olive oil, salt, and black pepper. Mix well."
+    },
+    {
+      "step": 4,
+      "text": "Spread the avocado mixture generously on each toasted bread slice."
+    },
+    {
+      "step": 5,
+      "text": "Top with cherry tomatoes, poached eggs, microgreens, and a sprinkle of red pepper flakes as desired."
+    },
+    {
+      "step": 6,
+      "text": "Serve immediately while toast is still warm. Enjoy!"
+    }
+  ],
+  "nutritionFacts": {
+    "calories": 320,
+    "protein": "12g",
+    "carbs": "28g",
+    "fat": "20g"
+  },
+  "tags": ["healthy", "breakfast", "quick", "vegetarian", "vegan-option"],
+  "dietaryInfo": ["vegetarian", "vegan-option", "dairy-free"],
+  "publishedAt": "2026-01-20",
+  "updatedAt": "2026-01-20",
+  "featured": false,
+  "rating": 4.6,
+  "reviewCount": 234,
+  "notes": [
+    "Choose ripe but firm avocados for the best texture - they should yield slightly to gentle pressure.",
+    "Add a drizzle of hot sauce or sriracha for an extra kick.",
+    "For a vegan version, skip the poached egg and add extra toppings like hemp seeds or nutritional yeast.",
+    "Toast the bread until it's crispy to prevent it from getting soggy."
+  ],
+  "faqs": [
+    {
+      "question": "How do I know if my avocado is ripe?",
+      "answer": "A ripe avocado should yield to gentle pressure but not feel mushy. The skin may be dark green to nearly black, and it should come away from the pit easily."
+    },
+    {
+      "question": "Can I make this ahead?",
+      "answer": "It's best enjoyed fresh, but you can mash the avocado with lemon juice up to 2 hours ahead. Keep covered with plastic wrap pressed directly on the surface to prevent browning."
+    },
+    {
+      "question": "What other toppings work well?",
+      "answer": "Try feta cheese, smoked salmon, radish slices, everything bagel seasoning, or a drizzle of balsamic glaze."
+    }
+  ]
+}

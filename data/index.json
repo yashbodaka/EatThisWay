@@ -1,0 +1,92 @@
+{
+  "categories": ["Breakfast", "Main Course", "Salad", "Dessert", "Appetizer", "Snack"],
+  "cuisines": ["Indian", "Italian", "Greek", "French", "American", "Mexican", "Chinese", "Thai"],
+  "tags": ["quick", "healthy", "vegetarian", "vegan", "gluten-free", "spicy", "comfort-food", "high-protein"],
+  "recipes": [
+    {
+      "id": "chicken-tikka-masala",
+      "title": "Chicken Tikka Masala",
+      "slug": "chicken-tikka-masala",
+      "description": "Tender chicken pieces marinated in yogurt and spices, cooked in a rich, creamy tomato-based curry sauce.",
+      "category": "Main Course",
+      "cuisine": "Indian",
+      "difficulty": "Medium",
+      "totalTime": 70,
+      "images": {
+        "thumbnail": "https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?w=400&h=300&fit=crop"
+      },
+      "tags": ["spicy", "curry", "dinner", "high-protein", "gluten-free"],
+      "rating": 4.8,
+      "reviewCount": 125,
+      "featured": true
+    },
+    {
+      "id": "chocolate-lava-cake",
+      "title": "Chocolate Lava Cake",
+      "slug": "chocolate-lava-cake",
+      "description": "Decadent individual chocolate cakes with a molten chocolate center that flows out when you cut into them.",
+      "category": "Dessert",
+      "cuisine": "French",
+      "difficulty": "Medium",
+      "totalTime": 27,
+      "images": {
+        "thumbnail": "https://images.unsplash.com/photo-1624353365286-3f8d62daad51?w=400&h=300&fit=crop"
+      },
+      "tags": ["chocolate", "dessert", "romantic", "quick", "indulgent"],
+      "rating": 4.9,
+      "reviewCount": 89,
+      "featured": true
+    },
+    {
+      "id": "avocado-toast",
+      "title": "Perfect Avocado Toast",
+      "slug": "avocado-toast",
+      "description": "A simple yet delicious breakfast or brunch option with creamy avocado, perfectly seasoned, on crispy toasted bread.",
+      "category": "Breakfast",
+      "cuisine": "American",
+      "difficulty": "Easy",
+      "totalTime": 10,
+      "images": {
+        "thumbnail": "https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?w=400&h=300&fit=crop"
+      },
+      "tags": ["healthy", "breakfast", "quick", "vegetarian", "vegan-option"],
+      "rating": 4.6,
+      "reviewCount": 234,
+      "featured": false
+    },
+    {
+      "id": "spaghetti-carbonara",
+      "title": "Classic Spaghetti Carbonara",
+      "slug": "spaghetti-carbonara",
+      "description": "Authentic Italian pasta dish with eggs, cheese, pancetta, and black pepper. Creamy without cream!",
+      "category": "Main Course",
+      "cuisine": "Italian",
+      "difficulty": "Medium",
+      "totalTime": 30,
+      "images": {
+        "thumbnail": "https://images.unsplash.com/photo-1612874742237-6526221588e3?w=400&h=300&fit=crop"
+      },
+      "tags": ["pasta", "italian", "comfort-food", "dinner", "quick"],
+      "rating": 4.7,
+      "reviewCount": 167,
+      "featured": true
+    },
+    {
+      "id": "greek-salad",
+      "title": "Traditional Greek Salad",
+      "slug": "greek-salad",
+      "description": "Fresh and vibrant Mediterranean salad with tomatoes, cucumbers, olives, feta cheese, and a simple olive oil dressing.",
+      "category": "Salad",
+      "cuisine": "Greek",
+      "difficulty": "Easy",
+      "totalTime": 15,
+      "images": {
+        "thumbnail": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=400&h=300&fit=crop"
+      },
+      "tags": ["healthy", "salad", "vegetarian", "mediterranean", "no-cook", "gluten-free"],
+      "rating": 4.5,
+      "reviewCount": 98,
+      "featured": false
+    }
+  ]
+}

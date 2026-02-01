@@ -1,65 +1,234 @@
-import Image from "next/image";
+import Link from 'next/link';
+import { ArrowUpRight, ArrowRight, ChefHat, Clock, Search } from 'lucide-react';
+import RecipeCard from '@/components/RecipeCard';
+import recipeIndex from '@/data/index.json';
 
 export default function Home() {
+  const featuredRecipes = recipeIndex.recipes.filter(recipe => recipe.featured);
+  const categories = recipeIndex.categories.slice(0, 6);
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+    <div>
+      {/* Hero Section */}
+      <section className="relative min-h-[60vh] lg:min-h-[90vh] flex items-center overflow-hidden">
+        {/* Parallax Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-fixed"
+          style={{
+            backgroundImage: `url('https://images.unsplash.com/photo-1606787366850-de6330128bfc?q=80&w=2070&auto=format&fit=crop')`,
+          }}
+        >
+          {/* Very light teal/blue overlay to integrate brand colors */}
+          <div className="absolute inset-0 bg-gradient-to-br from-[#0C2C55]/20 via-[#296374]/15 to-[#629FAD]/20"></div>
+          {/* Additional subtle depth overlay */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+        </div>
+
+        {/* Abstract Brand-colored Accents */}
+        <div className="absolute inset-0 pointer-events-none overflow-hidden">
+          <div className="absolute top-20 right-20 w-96 h-96 bg-[#629FAD]/10 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-40 left-10 w-80 h-80 bg-[#F5FBE6]/5 rounded-full blur-3xl"></div>
+          <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-[#296374]/8 rounded-full blur-2xl"></div>
+        </div>
+
+        {/* Content Container */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-32 w-full">
+          {/* Hero Content Box with Border */}
+          <div className="max-w-2xl border-2 border-[#629FAD]/30 rounded-[2rem] md:rounded-[3rem] p-6 md:p-12 backdrop-blur-md bg-[#0C2C55]/20 shadow-2xl">
+            <h1 className="text-3xl md:text-6xl font-serif font-bold mb-4 md:mb-6 text-[#F5FBE6] leading-tight">
+              Savor the Art of Cooking.
+            </h1>
+            <p className="text-base md:text-xl mb-6 md:mb-8 text-[#F5FBE6]/90 leading-relaxed">
+              Discover Exquisite Recipes & Master Culinary Creations.
+            </p>
+            <Link
+              href="/recipes"
+              className="inline-flex items-center justify-center px-6 py-3 md:px-8 md:py-4 bg-gradient-to-r from-[#629FAD] to-[#296374] text-white rounded-full font-semibold hover:shadow-xl hover:scale-105 transition-all group text-sm md:text-base"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              <ArrowUpRight className="mr-2 w-4 h-4 md:w-5 md:h-5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+              Browse Recipes
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Stats Section */}
+      <section className="bg-[#FAFCF5] py-12 md:py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10">
+            <div className="group bg-white backdrop-blur-sm border border-[#629FAD]/10 rounded-3xl p-6 md:p-10 text-center hover:shadow-2xl hover:scale-105 transition-all duration-300 hover:border-[#629FAD]/30">
+              <div className="bg-gradient-to-br from-[#629FAD] to-[#296374] w-12 h-12 md:w-16 md:h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-300">
+                <ChefHat className="w-6 h-6 md:w-8 md:h-8 text-white" />
+              </div>
+              <h3 className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-[#0C2C55] to-[#296374] bg-clip-text text-transparent mb-2 md:mb-3">{recipeIndex.recipes.length}+</h3>
+              <p className="text-[#233D4D]/80 font-medium">Tested Recipes</p>
+            </div>
+            <div className="group bg-white backdrop-blur-sm border border-[#629FAD]/10 rounded-3xl p-6 md:p-10 text-center hover:shadow-2xl hover:scale-105 transition-all duration-300 hover:border-[#629FAD]/30">
+              <div className="bg-gradient-to-br from-[#629FAD] to-[#296374] w-12 h-12 md:w-16 md:h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-300">
+                <Clock className="w-6 h-6 md:w-8 md:h-8 text-white" />
+              </div>
+              <h3 className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-[#0C2C55] to-[#296374] bg-clip-text text-transparent mb-2 md:mb-3">Quick</h3>
+              <p className="text-[#233D4D]/80 font-medium">Easy to Follow</p>
+            </div>
+            <div className="group bg-white backdrop-blur-sm border border-[#629FAD]/10 rounded-3xl p-6 md:p-10 text-center hover:shadow-2xl hover:scale-105 transition-all duration-300 hover:border-[#629FAD]/30">
+              <div className="bg-gradient-to-br from-[#629FAD] to-[#296374] w-12 h-12 md:w-16 md:h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-300">
+                <Search className="w-6 h-6 md:w-8 md:h-8 text-white" />
+              </div>
+              <h3 className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-[#0C2C55] to-[#296374] bg-clip-text text-transparent mb-2 md:mb-3">Search</h3>
+              <p className="text-[#233D4D]/80 font-medium">Find Your Recipe</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Recipes */}
+      <section className="relative py-24 bg-gradient-to-br from-[#296374] to-[#629FAD] overflow-hidden">
+        {/* Complex Geometric Pattern Overlay */}
+        <div className="absolute inset-0 opacity-[0.15]">
+          <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern id="geometric-pattern" x="0" y="0" width="120" height="120" patternUnits="userSpaceOnUse">
+                {/* Abstract hexagonal shapes */}
+                <path d="M 30 0 L 60 15 L 60 45 L 30 60 L 0 45 L 0 15 Z" fill="none" stroke="white" strokeWidth="0.8" opacity="0.6" />
+                <path d="M 90 0 L 120 15 L 120 45 L 90 60 L 60 45 L 60 15 Z" fill="none" stroke="white" strokeWidth="0.8" opacity="0.6" />
+                <path d="M 30 60 L 60 75 L 60 105 L 30 120 L 0 105 L 0 75 Z" fill="none" stroke="white" strokeWidth="0.8" opacity="0.6" />
+                <path d="M 90 60 L 120 75 L 120 105 L 90 120 L 60 105 L 60 75 Z" fill="none" stroke="white" strokeWidth="0.8" opacity="0.6" />
+                {/* Intersecting circles */}
+                <circle cx="30" cy="30" r="15" fill="none" stroke="white" strokeWidth="0.6" opacity="0.4" />
+                <circle cx="90" cy="30" r="15" fill="none" stroke="white" strokeWidth="0.6" opacity="0.4" />
+                <circle cx="30" cy="90" r="15" fill="none" stroke="white" strokeWidth="0.6" opacity="0.4" />
+                <circle cx="90" cy="90" r="15" fill="none" stroke="white" strokeWidth="0.6" opacity="0.4" />
+                {/* Abstract connecting lines */}
+                <path d="M 15 15 L 45 45 M 75 15 L 105 45 M 15 75 L 45 105 M 75 75 L 105 105" stroke="white" strokeWidth="0.5" opacity="0.3" />
+                <path d="M 45 15 L 15 45 M 105 15 L 75 45 M 45 75 L 15 105 M 105 75 L 75 105" stroke="white" strokeWidth="0.5" opacity="0.3" />
+                {/* Small dots */}
+                <circle cx="30" cy="15" r="2" fill="white" opacity="0.5" />
+                <circle cx="60" cy="30" r="2" fill="white" opacity="0.5" />
+                <circle cx="90" cy="15" r="2" fill="white" opacity="0.5" />
+                <circle cx="30" cy="75" r="2" fill="white" opacity="0.5" />
+                <circle cx="60" cy="90" r="2" fill="white" opacity="0.5" />
+                <circle cx="90" cy="75" r="2" fill="white" opacity="0.5" />
+              </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#geometric-pattern)" />
+          </svg>
+        </div>
+
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <span className="inline-block text-[#F5FBE6]/80 text-sm font-medium tracking-widest uppercase mb-4">Handpicked for You</span>
+            <h2 className="text-5xl md:text-6xl font-serif font-bold text-white mb-6">Featured Recipes</h2>
+            <p className="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto font-light tracking-wide">Hand-picked favorites from my kitchen to yours</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+            {featuredRecipes.map(recipe => (
+              <RecipeCard key={recipe.id} recipe={recipe} />
+            ))}
+          </div>
+          <div className="text-center">
+            <Link
+              href="/recipes"
+              className="inline-flex items-center px-12 py-5 bg-white/95 text-[#296374] rounded-full font-medium text-lg hover:bg-white hover:shadow-xl hover:scale-[1.02] transition-all duration-300 group backdrop-blur-sm"
             >
-              Learning
-            </a>{" "}
-            center.
+              View All Recipes
+              <ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Categories Section */}
+      <section className="relative py-24 bg-[#FAFCF5] overflow-hidden">
+        {/* Abstract Background Elements */}
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-20 left-10 w-64 h-64 bg-[#629FAD]/5 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#296374]/5 rounded-full blur-3xl"></div>
+          <div className="absolute top-1/2 left-1/3 w-48 h-48 bg-[#F5FBE6]/20 rounded-full blur-2xl"></div>
+        </div>
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-20">
+            <h2 className="text-4xl md:text-5xl font-serif font-bold bg-gradient-to-r from-[#0C2C55] to-[#296374] bg-clip-text text-transparent mb-6">Browse by Category</h2>
+            <p className="text-xl text-[#233D4D] max-w-2xl mx-auto font-light">Explore recipes organized by meal type</p>
+          </div>
+
+          {/* Asymmetric Grid Layout with Artistic Cards */}
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-6">
+            {categories.map((category, index) => {
+              const rotations = ['rotate-1', '-rotate-1', 'rotate-2', '-rotate-2', 'rotate-1', '-rotate-1'];
+              const delays = ['delay-0', 'delay-75', 'delay-100', 'delay-150', 'delay-200', 'delay-300'];
+              
+              return (
+                <Link
+                  key={category}
+                  href={`/recipes?category=${encodeURIComponent(category)}`}
+                  className={`group relative overflow-hidden transition-all duration-500 ${delays[index]} hover:rotate-0`}
+                  style={{ 
+                    animationDelay: `${index * 100}ms`,
+                  }}
+                >
+                  {/* Main Card */}
+                  <div className={`relative h-32 md:h-40 rounded-3xl bg-[#296374] p-6 md:p-8 flex items-center justify-center transform transition-all duration-500 hover:scale-105 hover:shadow-2xl ${rotations[index]} hover:rotate-0`}>
+                    {/* Abstract Decorative Elements */}
+                    <div className="absolute top-2 right-2 w-16 h-16 border-2 border-white/10 rounded-full transform group-hover:scale-150 transition-transform duration-700"></div>
+                    <div className="absolute bottom-2 left-2 w-12 h-12 bg-white/5 rounded-lg transform -rotate-12 group-hover:rotate-45 transition-transform duration-700"></div>
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 border border-white/5 rounded-full group-hover:scale-125 transition-transform duration-500"></div>
+                    
+                    {/* Subtle Gradient Overlay on Hover */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-[#629FAD]/0 to-[#629FAD]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    
+                    {/* Animated Border */}
+                    <div className="absolute inset-0 rounded-3xl border-2 border-transparent group-hover:border-[#EDEDCE]/20 transition-all duration-300"></div>
+                    
+                    {/* Category Text */}
+                    <h3 className="relative text-base md:text-lg font-bold text-white z-10 tracking-wide transform group-hover:scale-110 transition-transform duration-300">
+                      {category}
+                    </h3>
+                    
+                    {/* Corner Accent */}
+                    <div className="absolute bottom-0 right-0 w-0 h-0 border-l-[30px] border-l-transparent border-b-[30px] border-b-white/5 group-hover:border-b-[#EDEDCE]/15 transition-all duration-300"></div>
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="relative bg-[#296374] text-white py-24 overflow-hidden">
+        {/* Dense Grid Pattern Overlay */}
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTSAxNiAwIEwgMCAwIDAgMTYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZBRkNGNSIgc3Ryb2tlLXdpZHRoPSIwLjUiLz48L3N2Zz4=')] opacity-5 pointer-events-none"></div>
+        
+        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <span className="inline-block text-[#FAFCF5]/80 text-sm font-medium tracking-widest uppercase mb-4">Stay Connected</span>
+          <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-white">
+            Never Miss a Recipe!
+          </h2>
+          <p className="text-xl mb-10 text-[#FAFCF5]/90 max-w-2xl mx-auto leading-relaxed">
+            Follow me on social media for the latest recipes, cooking tips, and behind-the-scenes content.
           </p>
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <a
+              href="https://youtube.com/@yourchannelname"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-4 bg-white text-[#296374] rounded-full font-bold hover:bg-[#FAFCF5] hover:shadow-2xl hover:scale-105 transition-all duration-300"
+            >
+              Subscribe on YouTube
+            </a>
+            <a
+              href="https://instagram.com/yourusername"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-4 bg-transparent border-2 border-white text-white rounded-full font-bold hover:bg-white hover:text-[#296374] hover:shadow-2xl hover:scale-105 transition-all duration-300"
+            >
+              Follow on Instagram
+            </a>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+      </section>
     </div>
   );
 }
+

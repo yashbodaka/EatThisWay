@@ -1,0 +1,119 @@
+{
+  "id": "spaghetti-carbonara",
+  "title": "Classic Spaghetti Carbonara",
+  "slug": "spaghetti-carbonara",
+  "description": "Authentic Italian pasta dish with eggs, cheese, pancetta, and black pepper. Creamy without cream, this is the real Roman carbonara recipe!",
+  "category": "Main Course",
+  "cuisine": "Italian",
+  "difficulty": "Medium",
+  "prepTime": 10,
+  "cookTime": 20,
+  "totalTime": 30,
+  "servings": 4,
+  "author": {
+    "name": "Eat This Way",
+    "avatar": "https://images.unsplash.com/photo-1583394293214-28ded15ee548?w=200&h=200&fit=crop"
+  },
+  "images": {
+    "main": "https://images.unsplash.com/photo-1612874742237-6526221588e3?w=1200&h=800&fit=crop",
+    "thumbnail": "https://images.unsplash.com/photo-1612874742237-6526221588e3?w=400&h=300&fit=crop"
+  },
+  "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+  "ingredients": [
+    {
+      "item": "spaghetti",
+      "amount": "400",
+      "unit": "g",
+      "section": "Main"
+    },
+    {
+      "item": "pancetta or guanciale, diced",
+      "amount": "200",
+      "unit": "g"
+    },
+    {
+      "item": "large eggs",
+      "amount": "4",
+      "unit": "whole"
+    },
+    {
+      "item": "Pecorino Romano cheese, grated",
+      "amount": "1",
+      "unit": "cup"
+    },
+    {
+      "item": "Parmesan cheese, grated",
+      "amount": "1/2",
+      "unit": "cup"
+    },
+    {
+      "item": "freshly ground black pepper",
+      "amount": "1",
+      "unit": "tbsp"
+    },
+    {
+      "item": "salt for pasta water",
+      "amount": "2",
+      "unit": "tbsp"
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "text": "Bring a large pot of salted water to boil. Cook spaghetti according to package directions until al dente. Reserve 1 cup of pasta water before draining."
+    },
+    {
+      "step": 2,
+      "text": "While pasta cooks, cook pancetta in a large skillet over medium heat until crispy, about 8-10 minutes. Remove from heat."
+    },
+    {
+      "step": 3,
+      "text": "In a bowl, whisk together eggs, both cheeses, and black pepper until well combined."
+    },
+    {
+      "step": 4,
+      "text": "Add drained hot pasta to the skillet with pancetta (off heat). Toss to coat with the rendered fat."
+    },
+    {
+      "step": 5,
+      "text": "Quickly pour egg mixture over pasta, tossing continuously to create a creamy sauce. The residual heat will cook the eggs. Add reserved pasta water a little at a time if needed to reach desired consistency."
+    },
+    {
+      "step": 6,
+      "text": "Serve immediately with extra grated cheese and black pepper on top. Buon appetito!"
+    }
+  ],
+  "nutritionFacts": {
+    "calories": 580,
+    "protein": "28g",
+    "carbs": "65g",
+    "fat": "22g"
+  },
+  "tags": ["pasta", "italian", "comfort-food", "dinner", "quick"],
+  "dietaryInfo": [],
+  "publishedAt": "2026-01-12",
+  "updatedAt": "2026-01-12",
+  "featured": true,
+  "rating": 4.7,
+  "reviewCount": 167,
+  "notes": [
+    "Traditional carbonara doesn't use cream! The creaminess comes from the eggs and cheese.",
+    "Work quickly when combining the hot pasta with the egg mixture to create a smooth sauce without scrambling the eggs.",
+    "Use freshly grated cheese for the best flavor and texture.",
+    "The key is to remove the pan from heat before adding the egg mixture."
+  ],
+  "faqs": [
+    {
+      "question": "Why does my carbonara look scrambled?",
+      "answer": "The pan might be too hot when you add the eggs. Always remove from heat and toss quickly. The residual heat will cook the eggs into a creamy sauce."
+    },
+    {
+      "question": "Can I use bacon instead of pancetta?",
+      "answer": "Yes, but traditional carbonara uses guanciale or pancetta. Bacon will give a smokier flavor but works well as a substitute."
+    },
+    {
+      "question": "How do I reheat leftovers?",
+      "answer": "Add a splash of pasta water or cream and reheat gently in a pan over low heat, tossing constantly to prevent the eggs from scrambling."
+    }
+  ]
+}
