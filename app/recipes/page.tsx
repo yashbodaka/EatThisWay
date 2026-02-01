@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import RecipeCard from '@/components/RecipeCard';
 import { RecipeSummary } from '@/types/recipe';
@@ -8,7 +8,7 @@ import recipeIndex from '@/data/index.json';
 import Fuse from 'fuse.js';
 import { Filter, X, Search, ChevronDown } from 'lucide-react';
 
-export default function RecipesPage() {
+function RecipesPageContent() {
   const searchParams = useSearchParams();
   const searchQuery = searchParams.get('search') || '';
   const categoryParam = searchParams.get('category') || '';
@@ -274,5 +274,13 @@ export default function RecipesPage() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function RecipesPage() {
+  return (
+    <Suspense fallback={<div className="p-8">Loading...</div>}>
+      <RecipesPageContent />
+    </Suspense>
   );
 }
