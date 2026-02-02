@@ -13,6 +13,11 @@ export const metadata: Metadata = {
   title: "Eat This Way - Delicious Recipes for Everyone",
   description: "Discover amazing recipes from around the world. From quick breakfasts to elaborate dinners, find your next favorite dish at Eat This Way.",
   keywords: ["recipes", "cooking", "food", "chef", "kitchen", "meals", "dinner", "breakfast"],
+  icons: {
+    icon: [
+      { url: '/logo.png', sizes: 'any' },
+    ],
+  },
 };
 
 export default function RootLayout({

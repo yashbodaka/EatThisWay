@@ -66,7 +66,7 @@ export default function Header() {
             <img 
               src="/logo.png" 
               alt="Eat This Way Logo" 
-              className="h-12 w-12 object-contain"
+              className="h-20 w-20 object-contain"
             />
             <span className={`text-2xl font-bold transition-colors duration-300 ${
               currentSection === 'hero' ? 'text-white'
