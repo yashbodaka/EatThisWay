@@ -56,26 +56,52 @@ export default function Home() {
       <section className="bg-[#FAFCF5] py-12 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10">
-            <div className="group bg-white backdrop-blur-sm border border-[#629FAD]/10 rounded-3xl p-6 md:p-10 text-center hover:shadow-2xl hover:scale-105 transition-all duration-300 hover:border-[#629FAD]/30">
-              <div className="bg-gradient-to-br from-[#629FAD] to-[#296374] w-12 h-12 md:w-16 md:h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-300">
-                <ChefHat className="w-6 h-6 md:w-8 md:h-8 text-white" />
+            {/* Card 1 - Tested Recipes */}
+            <div className="group relative bg-[#FAF8F1] rounded-3xl border-b-4 md:border-b-8 border-r-2 md:border-r-4 border-[#D4C5B0] shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
+              {/* Grainy Vintage Texture Overlay */}
+              <div className="absolute inset-0 opacity-[0.15] pointer-events-none" style={{
+                backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`
+              }}></div>
+              {/* Inner Decorative Frame */}
+              <div className="relative m-2 md:m-3 border-2 border-[#296374]/30 rounded-2xl p-6 md:p-8 text-center">
+                <div className="bg-[#296374] w-14 h-14 md:w-20 md:h-20 rounded-xl flex items-center justify-center mx-auto mb-4 md:mb-6 shadow-md">
+                  <ChefHat className="w-7 h-7 md:w-10 md:h-10 text-[#FAF8F1]" />
+                </div>
+                <h3 className="text-4xl md:text-6xl font-serif font-black text-[#0C2C55] mb-2">{recipeIndex.recipes.length}+</h3>
+                <p className="text-sm md:text-base text-[#296374] font-bold tracking-wide">Tested Recipes</p>
               </div>
-              <h3 className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-[#0C2C55] to-[#296374] bg-clip-text text-transparent mb-2 md:mb-3">{recipeIndex.recipes.length}+</h3>
-              <p className="text-[#233D4D]/80 font-medium">Tested Recipes</p>
             </div>
-            <div className="group bg-white backdrop-blur-sm border border-[#629FAD]/10 rounded-3xl p-6 md:p-10 text-center hover:shadow-2xl hover:scale-105 transition-all duration-300 hover:border-[#629FAD]/30">
-              <div className="bg-gradient-to-br from-[#629FAD] to-[#296374] w-12 h-12 md:w-16 md:h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-300">
-                <Clock className="w-6 h-6 md:w-8 md:h-8 text-white" />
+
+            {/* Card 2 - Quick */}
+            <div className="group relative bg-[#FAF8F1] rounded-3xl border-b-4 md:border-b-8 border-r-2 md:border-r-4 border-[#D4C5B0] shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
+              {/* Grainy Vintage Texture Overlay */}
+              <div className="absolute inset-0 opacity-[0.15] pointer-events-none" style={{
+                backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`
+              }}></div>
+              {/* Inner Decorative Frame */}
+              <div className="relative m-2 md:m-3 border-2 border-[#296374]/30 rounded-2xl p-6 md:p-8 text-center">
+                <div className="bg-[#296374] w-14 h-14 md:w-20 md:h-20 rounded-xl flex items-center justify-center mx-auto mb-4 md:mb-6 shadow-md">
+                  <Clock className="w-7 h-7 md:w-10 md:h-10 text-[#FAF8F1]" />
+                </div>
+                <h3 className="text-4xl md:text-6xl font-serif font-black italic text-[#0C2C55] mb-2">Quick</h3>
+                <p className="text-sm md:text-base text-[#296374] font-bold tracking-wide">— Easy to Follow —</p>
               </div>
-              <h3 className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-[#0C2C55] to-[#296374] bg-clip-text text-transparent mb-2 md:mb-3">Quick</h3>
-              <p className="text-[#233D4D]/80 font-medium">Easy to Follow</p>
             </div>
-            <div className="group bg-white backdrop-blur-sm border border-[#629FAD]/10 rounded-3xl p-6 md:p-10 text-center hover:shadow-2xl hover:scale-105 transition-all duration-300 hover:border-[#629FAD]/30">
-              <div className="bg-gradient-to-br from-[#629FAD] to-[#296374] w-12 h-12 md:w-16 md:h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-300">
-                <Search className="w-6 h-6 md:w-8 md:h-8 text-white" />
+
+            {/* Card 3 - Search */}
+            <div className="group relative bg-[#FAF8F1] rounded-3xl border-b-4 md:border-b-8 border-r-2 md:border-r-4 border-[#D4C5B0] shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
+              {/* Grainy Vintage Texture Overlay */}
+              <div className="absolute inset-0 opacity-[0.15] pointer-events-none" style={{
+                backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`
+              }}></div>
+              {/* Inner Decorative Frame */}
+              <div className="relative m-2 md:m-3 border-2 border-[#296374]/30 rounded-2xl p-6 md:p-8 text-center">
+                <div className="bg-[#296374] w-14 h-14 md:w-20 md:h-20 rounded-xl flex items-center justify-center mx-auto mb-4 md:mb-6 shadow-md">
+                  <Search className="w-7 h-7 md:w-10 md:h-10 text-[#FAF8F1]" />
+                </div>
+                <h3 className="text-4xl md:text-6xl font-serif font-black italic text-[#0C2C55] mb-2">Search</h3>
+                <p className="text-sm md:text-base text-[#296374] font-bold tracking-wide">Find Your Recipe</p>
               </div>
-              <h3 className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-[#0C2C55] to-[#296374] bg-clip-text text-transparent mb-2 md:mb-3">Search</h3>
-              <p className="text-[#233D4D]/80 font-medium">Find Your Recipe</p>
             </div>
           </div>
         </div>
