@@ -70,8 +70,8 @@ export default function Home() {
               }}></div>
               {/* Inner Decorative Frame */}
               <div className="relative m-2 md:m-3 border-2 border-[#296374]/30 rounded-2xl p-6 md:p-8 text-center">
-                <div className="bg-[#296374] w-14 h-14 md:w-20 md:h-20 rounded-xl flex items-center justify-center mx-auto mb-4 md:mb-6 shadow-md">
-                  <ChefHat className="w-7 h-7 md:w-10 md:h-10 text-[#FAF8F1]" />
+                <div className="bg-[#296374] w-14 h-14 md:w-20 md:h-20 rounded-xl flex items-center justify-center mx-auto mb-4 md:mb-6 shadow-md p-2">
+                  <img src="/chef-hat-vintage.svg" alt="Chef Hat" className="w-full h-full" />
                 </div>
                 <h3 className="text-4xl md:text-6xl font-serif font-black text-[#0C2C55] mb-2">{recipeIndex.recipes.length}+</h3>
                 <p className="text-sm md:text-base text-[#296374] font-bold tracking-wide">Tested Recipes</p>
@@ -87,8 +87,8 @@ export default function Home() {
               }}></div>
               {/* Inner Decorative Frame */}
               <div className="relative m-2 md:m-3 border-2 border-[#296374]/30 rounded-2xl p-6 md:p-8 text-center">
-                <div className="bg-[#296374] w-14 h-14 md:w-20 md:h-20 rounded-xl flex items-center justify-center mx-auto mb-4 md:mb-6 shadow-md">
-                  <Clock className="w-7 h-7 md:w-10 md:h-10 text-[#FAF8F1]" />
+                <div className="bg-[#296374] w-14 h-14 md:w-20 md:h-20 rounded-xl flex items-center justify-center mx-auto mb-4 md:mb-6 shadow-md p-2">
+                  <img src="/clock-vintage.svg" alt="Clock" className="w-full h-full" />
                 </div>
                 <h3 className="text-4xl md:text-6xl font-serif font-black italic text-[#0C2C55] mb-2">Quick</h3>
                 <p className="text-sm md:text-base text-[#296374] font-bold tracking-wide">— Easy to Follow —</p>
@@ -104,8 +104,8 @@ export default function Home() {
               }}></div>
               {/* Inner Decorative Frame */}
               <div className="relative m-2 md:m-3 border-2 border-[#296374]/30 rounded-2xl p-6 md:p-8 text-center">
-                <div className="bg-[#296374] w-14 h-14 md:w-20 md:h-20 rounded-xl flex items-center justify-center mx-auto mb-4 md:mb-6 shadow-md">
-                  <Search className="w-7 h-7 md:w-10 md:h-10 text-[#FAF8F1]" />
+                <div className="bg-[#296374] w-14 h-14 md:w-20 md:h-20 rounded-xl flex items-center justify-center mx-auto mb-4 md:mb-6 shadow-md p-2">
+                  <img src="/search-vintage.svg" alt="Search" className="w-full h-full" />
                 </div>
                 <h3 className="text-4xl md:text-6xl font-serif font-black italic text-[#0C2C55] mb-2">Search</h3>
                 <p className="text-sm md:text-base text-[#296374] font-bold tracking-wide">Find Your Recipe</p>
