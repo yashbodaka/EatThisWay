@@ -70,7 +70,7 @@ export default function Home() {
               }}></div>
               {/* Inner Decorative Frame */}
               <div className="relative m-2 md:m-3 border-2 border-[#296374]/30 rounded-2xl p-6 md:p-8 text-center">
-                <div className="bg-[#FAF8F1] w-24 h-24 md:w-36 md:h-36 rounded-2xl border-4 border-[#296374] flex items-center justify-center mx-auto mb-4 md:mb-6 shadow-lg p-4">
+                <div className="bg-[#FAF8F1] w-20 h-20 md:w-28 md:h-28 rounded-2xl border-4 border-[#296374] flex items-center justify-center mx-auto mb-4 md:mb-6 shadow-lg p-0 overflow-hidden">
                   <img src="/chef-hat-vintage.png" alt="Chef Hat" className="w-full h-full object-contain" />
                 </div>
                 <h3 className="text-4xl md:text-6xl font-serif font-black text-[#0C2C55] mb-2">{recipeIndex.recipes.length}+</h3>
@@ -87,7 +87,7 @@ export default function Home() {
               }}></div>
               {/* Inner Decorative Frame */}
               <div className="relative m-2 md:m-3 border-2 border-[#296374]/30 rounded-2xl p-6 md:p-8 text-center">
-                <div className="bg-[#FAF8F1] w-24 h-24 md:w-36 md:h-36 rounded-2xl border-4 border-[#296374] flex items-center justify-center mx-auto mb-4 md:mb-6 shadow-lg p-4">
+                <div className="bg-[#FAF8F1] w-20 h-20 md:w-28 md:h-28 rounded-2xl border-4 border-[#296374] flex items-center justify-center mx-auto mb-4 md:mb-6 shadow-lg p-0 overflow-hidden">
                   <img src="/clock-vintage.png" alt="Clock" className="w-full h-full object-contain" />
                 </div>
                 <h3 className="text-4xl md:text-6xl font-serif font-black italic text-[#0C2C55] mb-2">Quick</h3>
@@ -104,7 +104,7 @@ export default function Home() {
               }}></div>
               {/* Inner Decorative Frame */}
               <div className="relative m-2 md:m-3 border-2 border-[#296374]/30 rounded-2xl p-6 md:p-8 text-center">
-                <div className="bg-[#FAF8F1] w-24 h-24 md:w-36 md:h-36 rounded-2xl border-4 border-[#296374] flex items-center justify-center mx-auto mb-4 md:mb-6 shadow-lg p-4">
+                <div className="bg-[#FAF8F1] w-20 h-20 md:w-28 md:h-28 rounded-2xl border-4 border-[#296374] flex items-center justify-center mx-auto mb-4 md:mb-6 shadow-lg p-0 overflow-hidden">
                   <img src="/search-vintage.png" alt="Search" className="w-full h-full object-contain" />
                 </div>
                 <h3 className="text-4xl md:text-6xl font-serif font-black italic text-[#0C2C55] mb-2">Search</h3>
