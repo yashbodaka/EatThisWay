@@ -71,7 +71,7 @@ export default function Home() {
               {/* Inner Decorative Frame */}
               <div className="relative m-2 md:m-3 border-2 border-[#296374]/30 rounded-2xl p-6 md:p-8 text-center">
                 <div className="bg-[#296374] w-14 h-14 md:w-20 md:h-20 rounded-xl flex items-center justify-center mx-auto mb-4 md:mb-6 shadow-md p-2">
-                  <img src="/chef-hat-vintage.svg" alt="Chef Hat" className="w-full h-full" />
+                  <img src="/chef-hat-vintage.png" alt="Chef Hat" className="w-full h-full object-contain" />
                 </div>
                 <h3 className="text-4xl md:text-6xl font-serif font-black text-[#0C2C55] mb-2">{recipeIndex.recipes.length}+</h3>
                 <p className="text-sm md:text-base text-[#296374] font-bold tracking-wide">Tested Recipes</p>
@@ -88,7 +88,7 @@ export default function Home() {
               {/* Inner Decorative Frame */}
               <div className="relative m-2 md:m-3 border-2 border-[#296374]/30 rounded-2xl p-6 md:p-8 text-center">
                 <div className="bg-[#296374] w-14 h-14 md:w-20 md:h-20 rounded-xl flex items-center justify-center mx-auto mb-4 md:mb-6 shadow-md p-2">
-                  <img src="/clock-vintage.svg" alt="Clock" className="w-full h-full" />
+                  <img src="/clock-vintage.png" alt="Clock" className="w-full h-full object-contain" />
                 </div>
                 <h3 className="text-4xl md:text-6xl font-serif font-black italic text-[#0C2C55] mb-2">Quick</h3>
                 <p className="text-sm md:text-base text-[#296374] font-bold tracking-wide">— Easy to Follow —</p>
@@ -105,7 +105,7 @@ export default function Home() {
               {/* Inner Decorative Frame */}
               <div className="relative m-2 md:m-3 border-2 border-[#296374]/30 rounded-2xl p-6 md:p-8 text-center">
                 <div className="bg-[#296374] w-14 h-14 md:w-20 md:h-20 rounded-xl flex items-center justify-center mx-auto mb-4 md:mb-6 shadow-md p-2">
-                  <img src="/search-vintage.svg" alt="Search" className="w-full h-full" />
+                  <img src="/search-vintage.png" alt="Search" className="w-full h-full object-contain" />
                 </div>
                 <h3 className="text-4xl md:text-6xl font-serif font-black italic text-[#0C2C55] mb-2">Search</h3>
                 <p className="text-sm md:text-base text-[#296374] font-bold tracking-wide">Find Your Recipe</p>

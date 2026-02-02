@@ -62,11 +62,11 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
+          <Link href="/" className="flex items-center space-x-3">
             <img 
               src="/logo.png" 
               alt="Eat This Way Logo" 
-              className="h-8 w-8 object-contain"
+              className="h-12 w-12 object-contain"
             />
             <span className={`text-2xl font-bold transition-colors duration-300 ${
               currentSection === 'hero' ? 'text-white'
