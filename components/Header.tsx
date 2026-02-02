@@ -63,6 +63,11 @@ export default function Header() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
+            <img 
+              src="/logo.png" 
+              alt="Eat This Way Logo" 
+              className="h-8 w-8 object-contain"
+            />
             <span className={`text-2xl font-bold transition-colors duration-300 ${
               currentSection === 'hero' ? 'text-white'
               : currentSection === 'stats' || currentSection === 'categories' ? 'text-[#233D4D]'
