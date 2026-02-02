@@ -53,8 +53,13 @@ export default function Home() {
       </section>
 
       {/* Stats Section */}
-      <section className="bg-[#FAFCF5] py-12 md:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative bg-[#FAFCF5] py-12 md:py-24 overflow-hidden">
+        {/* Papery Texture Background */}
+        <div className="absolute inset-0 opacity-30 pointer-events-none mix-blend-multiply" style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='paperTexture'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='2.5' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23paperTexture)'/%3E%3C/svg%3E")`,
+          backgroundSize: '180px 180px'
+        }}></div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10">
             {/* Card 1 - Tested Recipes */}
             <div className="group relative bg-[#FAF8F1] rounded-3xl border-b-4 md:border-b-8 border-r-2 md:border-r-4 border-[#D4C5B0] shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
