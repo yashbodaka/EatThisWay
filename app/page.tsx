@@ -59,8 +59,9 @@ export default function Home() {
             {/* Card 1 - Tested Recipes */}
             <div className="group relative bg-[#FAF8F1] rounded-3xl border-b-4 md:border-b-8 border-r-2 md:border-r-4 border-[#D4C5B0] shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
               {/* Grainy Vintage Texture Overlay */}
-              <div className="absolute inset-0 opacity-[0.15] pointer-events-none" style={{
-                backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`
+              <div className="absolute inset-0 opacity-40 pointer-events-none mix-blend-multiply" style={{
+                backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='2.5' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`,
+                backgroundSize: '180px 180px'
               }}></div>
               {/* Inner Decorative Frame */}
               <div className="relative m-2 md:m-3 border-2 border-[#296374]/30 rounded-2xl p-6 md:p-8 text-center">
@@ -75,8 +76,9 @@ export default function Home() {
             {/* Card 2 - Quick */}
             <div className="group relative bg-[#FAF8F1] rounded-3xl border-b-4 md:border-b-8 border-r-2 md:border-r-4 border-[#D4C5B0] shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
               {/* Grainy Vintage Texture Overlay */}
-              <div className="absolute inset-0 opacity-[0.15] pointer-events-none" style={{
-                backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`
+              <div className="absolute inset-0 opacity-40 pointer-events-none mix-blend-multiply" style={{
+                backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='2.5' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`,
+                backgroundSize: '180px 180px'
               }}></div>
               {/* Inner Decorative Frame */}
               <div className="relative m-2 md:m-3 border-2 border-[#296374]/30 rounded-2xl p-6 md:p-8 text-center">
@@ -91,8 +93,9 @@ export default function Home() {
             {/* Card 3 - Search */}
             <div className="group relative bg-[#FAF8F1] rounded-3xl border-b-4 md:border-b-8 border-r-2 md:border-r-4 border-[#D4C5B0] shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
               {/* Grainy Vintage Texture Overlay */}
-              <div className="absolute inset-0 opacity-[0.15] pointer-events-none" style={{
-                backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`
+              <div className="absolute inset-0 opacity-40 pointer-events-none mix-blend-multiply" style={{
+                backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='2.5' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`,
+                backgroundSize: '180px 180px'
               }}></div>
               {/* Inner Decorative Frame */}
               <div className="relative m-2 md:m-3 border-2 border-[#296374]/30 rounded-2xl p-6 md:p-8 text-center">
